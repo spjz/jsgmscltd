@@ -2,23 +2,25 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="{{root}}/assets/css/app.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="{{root}}/assets/css/app.css">
+</head>
+<body>
 
-    <div class="container">
+<div class="row multilevel-offcanvas off-canvas position-right" id="offCanvasRight" data-off-canvas>
+  {{> multilevel-offcanvas-menu}}
+</div>
 
-      {{> header}}
-      {{> body}}
-      {{> footer}}
+<div class="row off-canvas-content" data-off-canvas-content>
+  {{> header}}
+  {{> body}}
+  {{> footer}}
+</div>
 
-    </div>
-
-    <script src="{{root}}assets/js/app.js"></script>
-  </body>
+<script src="{{root}}assets/js/app.js"></script>
+</body>
 </html>

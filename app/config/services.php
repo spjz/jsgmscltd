@@ -30,6 +30,7 @@ $di->setShared('url', function () {
 /**
  * Setting up the view component
  */
+// TODO: Integrate with Handlebars
 $di->setShared('view', function () {
     $config = $this->getConfig();
 
